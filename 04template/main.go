@@ -48,7 +48,7 @@ func handleIndex(w http.ResponseWriter, r *http.Request) {
 
 func loadTemplate(name string) *template.Template {
 	t, err := template.ParseFiles(
-		"root/index.html",
+		"root/"+name+".html",
 		"root/template/header.html",
 		"root/template/footer.html",
 	)
